@@ -15,13 +15,11 @@ public class WorkerThread<T> extends Thread {
 
 	public void run() {
 		// TODO: Implement WorkerThread.run().
-		// busy-waiting?
 		while(true)
 		{
 			Event<? extends Object> event = (Event<? extends Object>) handler.getHandle().read();
 			if (event == null) {
-				break; 
-				//TODO: thread should end
+				this.cancelThread(); 
 			}
 			try {
 				queue.put(event);
@@ -34,5 +32,6 @@ public class WorkerThread<T> extends Thread {
 
 	public void cancelThread() {
 		// TODO: Implement WorkerThread.cancelThread().
+		this.interrupt();
 	}
 }

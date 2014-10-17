@@ -3,6 +3,8 @@ package reactor;
 import java.util.ArrayList;
 
 import reactorapi.*;
+import reactorexample.AcceptHandle;
+import reactorexample.TCPTextHandle;
 import reactor.BlockingEventQueue;
 import reactor.WorkerThread;
 
@@ -23,9 +25,15 @@ public class Dispatcher {
 		// received then first event is read and then removed
 		
 		Event<?> event = this.select();
-		EventHandler<?> eventHandler = event.getHandler();
+		EventHandler eventHandler = event.getHandler();
+		
 		if (eventHandler != null && eventHandlers.indexOf(event) != -1) {
-			eventHandler.handleEvent(event);
+			if (event == null) {
+				this.removeHandler(eventHandler);
+			}
+			else {
+				eventHandler.handleEvent(event);
+			}
 		}
 	
 	}
@@ -49,6 +57,7 @@ public class Dispatcher {
 		eventHandlers.add(h);
 		WorkerThread<?> workerThread = new WorkerThread(h, queue);
 		workerThread.start();
+		numberOfActiveWorkerThreads ++;
 	}
 
 	public void removeHandler(EventHandler<?> h) {
@@ -61,8 +70,21 @@ public class Dispatcher {
 		// TODO: receive message from hangman-server
 	}
 	
+	public void clearConnections() {
+		for (EventHandler handler: this.eventHandlers){
+			try {
+				((TCPTextHandle)handler.getHandle())
+						.close();
+			} catch (Exception ex) {
+				((AcceptHandle)handler.getHandle())
+						.close();
+			}
+		}
+	}
+	
 	// Add methods and fields as needed.
 	private BlockingEventQueue<EventHandler<?>> queue;
 	public ArrayList<EventHandler<?>> eventHandlers = new ArrayList<EventHandler<?>>();
+	public int numberOfActiveWorkerThreads = 0;
 			
 }

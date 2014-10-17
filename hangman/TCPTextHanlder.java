@@ -4,13 +4,20 @@ import java.io.IOException;
 import java.net.Socket;
 
 import reactorapi.*;
+import reactorexample.TCPTextHandle;
 
 public class TCPTextHanlder implements EventHandler<String> {
 
+	public TCPTextHandle tcpTextHandle = null;
+	
+	public TCPTextHanlder(Socket newSocket) throws IOException {
+		tcpTextHandle = new TCPTextHandle(newSocket);
+	}
+	
 	@Override
 	public Handle<String> getHandle() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.tcpTextHandle;
 	}
 
 	@Override
