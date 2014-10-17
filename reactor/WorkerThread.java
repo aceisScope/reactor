@@ -17,12 +17,9 @@ public class WorkerThread<T> extends Thread {
 		// TODO: Implement WorkerThread.run().
 		while(true)
 		{
-			Event<? extends Object> event = (Event<? extends Object>) handler.getHandle().read();
-			if (event == null) {
-				// dispatcher should cancel thread
-			}
+			T something = handler.getHandle().read();
 			try {
-				queue.put(event);
+				queue.put(new Event<T>(something, handler));
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
