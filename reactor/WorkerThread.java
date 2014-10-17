@@ -19,7 +19,7 @@ public class WorkerThread<T> extends Thread {
 		{
 			Event<? extends Object> event = (Event<? extends Object>) handler.getHandle().read();
 			if (event == null) {
-				this.cancelThread(); 
+				// dispatcher should cancel thread
 			}
 			try {
 				queue.put(event);

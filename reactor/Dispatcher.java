@@ -1,6 +1,7 @@
 package reactor;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import reactorapi.*;
 import reactorexample.AcceptHandle;
@@ -27,12 +28,13 @@ public class Dispatcher {
 		Event<?> event = this.select();
 		EventHandler eventHandler = event.getHandler();
 		
-		if (eventHandler != null && eventHandlers.indexOf(event) != -1) {
+		if (eventHandler != null && handlerMap.containsKey(eventHandler)) {
 			if (event == null) {
 				this.removeHandler(eventHandler);
 			}
-			else {
+			else { 
 				eventHandler.handleEvent(event);
+				//event.handle(); // this does exactly the same as line above
 			}
 		}
 	
@@ -54,16 +56,17 @@ public class Dispatcher {
 		//All events received on the corresponding handle (h.getHandle()) must be (eventually) 
 		//dispatched to h, until removeHandler(h) is called or a null message is received
 		
-		eventHandlers.add(h);
 		WorkerThread<?> workerThread = new WorkerThread(h, queue);
 		workerThread.start();
 		numberOfActiveWorkerThreads ++;
 	}
 
 	public void removeHandler(EventHandler<?> h) {
-		// TODO: Implement Dispatcher.removeHandler(EventHandler).
-		eventHandlers.remove(h);
-		h = null;
+		//eventHandlers.remove(h);
+		if (handlerMap.containsKey(h)) {
+			handlerMap.get(h).cancelThread();
+			handlerMap.remove(h);
+		}
 	}
 	
 	public void listenToServer(Object m) {
@@ -71,7 +74,7 @@ public class Dispatcher {
 	}
 	
 	public void clearConnections() {
-		for (EventHandler handler: this.eventHandlers){
+		for (EventHandler handler: this.handlerMap.keySet()){
 			try {
 				((TCPTextHandle)handler.getHandle())
 						.close();
@@ -84,7 +87,8 @@ public class Dispatcher {
 	
 	// Add methods and fields as needed.
 	private BlockingEventQueue<EventHandler<?>> queue;
-	public ArrayList<EventHandler<?>> eventHandlers = new ArrayList<EventHandler<?>>();
+	//private ArrayList<EventHandler<?>> eventHandlers = new ArrayList<EventHandler<?>>();
+	private HashMap<EventHandler<?>, WorkerThread<?>> handlerMap = new HashMap<EventHandler<?>, WorkerThread<?>>();
 	public int numberOfActiveWorkerThreads = 0;
 			
 }
