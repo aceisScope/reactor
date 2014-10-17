@@ -25,18 +25,23 @@ public class Dispatcher {
 		// wait until there is an event. When an event is
 		// received then first event is read and then removed
 		
-		Event<?> event = this.select();
-		EventHandler eventHandler = event.getHandler();
-		
-		if (eventHandler != null && handlerMap.containsKey(eventHandler)) {
-			if (event == null) {
-				this.removeHandler(eventHandler);
-			}
-			else { 
-				eventHandler.handleEvent(event);
-				//event.handle(); // this does exactly the same as line above
+		while(!handlerMap.isEmpty())
+		{
+			Event<?> event = this.select();
+			EventHandler eventHandler = event.getHandler();
+			
+			if (eventHandler != null && handlerMap.containsKey(eventHandler)) {
+				if (event == null) {
+					this.removeHandler(eventHandler);
+				}
+				else { 
+					//eventHandler.handleEvent(event);
+					event.handle(); // this does exactly the same as line above
+				}
 			}
 		}
+		
+		
 	
 	}
 
