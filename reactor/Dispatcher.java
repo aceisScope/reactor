@@ -31,7 +31,7 @@ public class Dispatcher {
 			EventHandler eventHandler = event.getHandler();
 			
 			if (eventHandler != null && handlerMap.containsKey(eventHandler)) {
-				if (event == null) {
+				if (event.getEvent() == null) {
 					this.removeHandler(eventHandler);
 				}
 				else { 
