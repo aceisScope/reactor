@@ -33,7 +33,7 @@ public class TCPTextHanlder implements EventHandler<String> {
 		// TODO Auto-generated method stub
 		if (s == null) {
 			tcpTextHandle.close();
-			//TODO:hangmanrules.removePlayer(this_player);
+			hangmanrules.removePlayer(findPlayerbyHandle(tcpTextHandle));
 			return;
 		}
 		
@@ -52,8 +52,8 @@ public class TCPTextHanlder implements EventHandler<String> {
 					((TCPTextHandle)(itr.next().playerData)).close();
 				}
 				
-				// close server socket
-				//ssh.close();
+				//TODO: close server socket
+				
 			}
 		}
 		
