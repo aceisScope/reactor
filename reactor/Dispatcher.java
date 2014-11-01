@@ -63,6 +63,7 @@ public class Dispatcher {
 		
 		WorkerThread<?> workerThread = new WorkerThread(h, queue);
 		workerThread.start();
+		handlerMap.put(h, workerThread);
 		numberOfActiveWorkerThreads ++;
 	}
 
