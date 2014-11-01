@@ -29,6 +29,8 @@ public class WorkerThread<T> extends Thread {
 
 	public void cancelThread() {
 		// TODO: Implement WorkerThread.cancelThread().
-		this.interrupt();
+		if (isAlive()) {
+			this.interrupt();
+		}
 	}
 }
