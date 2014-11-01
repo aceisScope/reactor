@@ -74,23 +74,8 @@ public class Dispatcher {
 			handlerMap.remove(h);
 		}
 	}
-	
-	public void listenToServer(Object m) {
-		// TODO: receive message from hangman-server
-	}
-	
-	public void clearConnections() {
-		for (EventHandler handler: this.handlerMap.keySet()){
-			try {
-				((TCPTextHandle)handler.getHandle())
-						.close();
-			} catch (Exception ex) {
-				((AcceptHandle)handler.getHandle())
-						.close();
-			}
-		}
-	}
-	
+		
+
 	// Add methods and fields as needed.
 	private BlockingEventQueue<EventHandler<?>> queue;
 	//private ArrayList<EventHandler<?>> eventHandlers = new ArrayList<EventHandler<?>>();

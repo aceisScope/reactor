@@ -27,14 +27,19 @@ public class AcceptHandler implements EventHandler<Socket>{
 	@Override
 	public void handleEvent(Socket s) {
 		// TODO Auto-generated method stub
-
-			try {
-				d.addHandler(new TCPTextHanlder(s));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+		
+		if (s == null) {
+			acceptHandle.close();
+			return ;
 		}
+
+		try {
+			d.addHandler(new TCPTextHanlder(s));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	
 	
 }
