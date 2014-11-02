@@ -17,6 +17,16 @@ public class WorkerThread<T> extends Thread {
 		// TODO: Implement WorkerThread.run().
 		while(true)
 		{
+			
+			if (Thread.currentThread().interrupted()) {
+				try {
+					throw (new InterruptedException());
+				} catch (InterruptedException e) {
+					// TODO: handle exception
+					break;
+				}
+			}
+			
 			T something = handler.getHandle().read();
 			try {
 				queue.put(new Event<T>(something, handler));
