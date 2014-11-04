@@ -1,21 +1,25 @@
 package hangman;
 
+import hangmanrules.HangmanRules;
+
 import java.io.IOException;
 import java.net.Socket;
 
 import reactor.Dispatcher;
 import reactorapi.*;
 import reactorexample.AcceptHandle;
+import reactorexample.TCPTextHandle;
 
 public class AcceptHandler implements EventHandler<Socket>{
 	
 	private Dispatcher d = null;
 	private AcceptHandle acceptHandle = null;
+	private HangmanRules<TCPTextHandle> rules;
 	
-	public AcceptHandler(Dispatcher d) throws IOException {
+	public AcceptHandler(Dispatcher d, HangmanRules<TCPTextHandle> rules) throws IOException {
 		this.d = d;
 		this.acceptHandle = new AcceptHandle();
-		
+		this.rules = rules;
 	}
 
 	@Override
@@ -34,7 +38,7 @@ public class AcceptHandler implements EventHandler<Socket>{
 		}
 
 		try {
-			d.addHandler(new TCPTextHanlder(s));
+			d.addHandler(new TCPTextHandler(s, rules));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

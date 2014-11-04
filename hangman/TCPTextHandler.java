@@ -8,16 +8,16 @@ import reactorapi.*;
 import reactorexample.TCPTextHandle;
 import hangmanrules.*;
 
-public class TCPTextHanlder implements EventHandler<String> {
+public class TCPTextHandler implements EventHandler<String> {
 
 	public TCPTextHandle tcpTextHandle = null;
 	private HangmanRules<TCPTextHandle> hangmanrules;
 	
-	public TCPTextHanlder(Socket newSocket) throws IOException {
+	public TCPTextHandler(Socket newSocket) throws IOException {
 		tcpTextHandle = new TCPTextHandle(newSocket);
 	}
 	
-	public TCPTextHanlder(Socket newSocket, HangmanRules<TCPTextHandle> hr) throws IOException {
+	public TCPTextHandler(Socket newSocket, HangmanRules<TCPTextHandle> hr) throws IOException {
 		tcpTextHandle = new TCPTextHandle(newSocket);
 		this.hangmanrules = hr;
 	}
@@ -38,22 +38,32 @@ public class TCPTextHanlder implements EventHandler<String> {
 		}
 		
 		else {
-			char guess = s.charAt(0);
-			hangmanrules.makeGuess(guess);
+			if(s.length()!=1)
+			{
+				hangmanrules.addNewPlayer(tcpTextHandle, s);
+				tcpTextHandle.write(hangmanrules.getStatus());
+			}
+			else
+			{
 			
-			HangmanRules<TCPTextHandle>.Player player = findPlayerbyHandle(tcpTextHandle);
-			String guessString = player.getGuessString(guess);
-			BroadCast(guessString);
-			
-			if (hangmanrules.gameEnded()) {
-				Iterator<HangmanRules<TCPTextHandle>.Player> itr = hangmanrules.getPlayers().iterator();
-				while (itr.hasNext()) {
-					// close all TCPTextHandle sockets
-					((TCPTextHandle)(itr.next().playerData)).close();
+				char guess = s.charAt(0);
+				System.out.println("Received guess: "+guess);
+				hangmanrules.makeGuess(guess);
+				
+				HangmanRules<TCPTextHandle>.Player player = findPlayerbyHandle(tcpTextHandle);
+				String guessString = player.getGuessString(guess);
+				BroadCast(guessString);
+				
+				if (hangmanrules.gameEnded()) {
+					Iterator<HangmanRules<TCPTextHandle>.Player> itr = hangmanrules.getPlayers().iterator();
+					while (itr.hasNext()) {
+						// close all TCPTextHandle sockets
+						((TCPTextHandle)(itr.next().playerData)).close();
+					}
+					
+					//TODO: close server socket
+					
 				}
-				
-				//TODO: close server socket
-				
 			}
 		}
 		
