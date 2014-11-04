@@ -33,8 +33,8 @@ public class Dispatcher {
 			if (eventHandler != null && handlerMap.containsKey(eventHandler)) {
 				if (event.getEvent() == null) {
 					this.removeHandler(eventHandler);
-					System.out.println("This should happen 6 times");
-					System.out.println("Size is: "+handlerMap.size());
+//					System.out.println("This should happen 6 times");
+//					System.out.println("Size is: "+handlerMap.size());
 				}
 				else { 
 					//eventHandler.handleEvent(event);
@@ -74,7 +74,7 @@ public class Dispatcher {
 		//eventHandlers.remove(h);
 		
 		if (handlerMap.containsKey(h)) {
-			System.out.print("remove handler ");
+//			System.out.print("remove handler ");
 			handlerMap.get(h).cancelThread();
 			handlerMap.remove(h);
 		}

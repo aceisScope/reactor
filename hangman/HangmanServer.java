@@ -48,16 +48,6 @@ public class HangmanServer
 			return;
 		}
 
-		String result = "" ;//+ sh1 + sh2;
-
-		if (!result.equals(expected)) {
-			System.err.println("Reactor test failed, expected:");
-			System.err.println(expected);
-			System.err.println("got:");
-			System.err.println(result);
-			System.exit(1);
-		}
-		System.err.print(".");
 	}
 
 	/**

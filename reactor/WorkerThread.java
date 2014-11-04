@@ -31,7 +31,7 @@ public class WorkerThread<T> extends Thread {
 				
 				try {
 					T something = handler.getHandle().read();
-					System.out.println("I will try to put "+something);
+//					System.out.println("I will try to put "+something);
 					queue.put(new Event<T>(something, handler));
 					if (something == null) stop = true;
 				} catch (InterruptedException e) {
@@ -51,7 +51,7 @@ public class WorkerThread<T> extends Thread {
 	public void cancelThread() {
 		// TODO: Implement WorkerThread.cancelThread().
 		if (isAlive()) {
-			System.out.println("cancel worker thread ");
+//			System.out.println("cancel worker thread ");
 			stop = true;
 //			this.interrupt();
 		}
