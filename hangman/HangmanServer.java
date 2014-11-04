@@ -37,7 +37,7 @@ public class HangmanServer
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		} 
 	}
 
 	public void execute() {

@@ -22,9 +22,6 @@ public class BlockingEventQueue<T> implements BlockingQueue<Event<? extends T>> 
 	     * wait()ing in acquire().
 	     */
 	    public synchronized void release() {
-//	        if (counter == 0) {
-//	            this.notify();
-//	        }
 	        counter++;
 	        this.notify();
 	    }
