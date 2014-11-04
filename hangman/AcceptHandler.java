@@ -38,7 +38,7 @@ public class AcceptHandler implements EventHandler<Socket>{
 		}
 
 		try {
-			d.addHandler(new TCPTextHandler(s, rules));
+			d.addHandler(new TCPTextHandler(s, rules, this));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

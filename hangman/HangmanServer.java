@@ -85,31 +85,4 @@ public class HangmanServer
 		}
 	}
 
-	/**
-	 * Event handler that receives characters from a (creator-supplied)
-	 * StringHandle and collects them in a String.
-	 */
-	public class StringHandler implements EventHandler<Character> {
-		StringHandle sh;
-		StringBuffer sb = new StringBuffer();
-
-		public StringHandler(String s) {
-			sh = new StringHandle(s);
-		}
-
-		public StringHandle getHandle() {
-			return sh;
-		}
-
-		public void handleEvent(Character s) {
-			if (s == null) {
-				d.removeHandler(this);
-			} else
-				sb.append(s);
-		}
-
-		public String toString() {
-			return sb.toString();
-		}
 	}
-}

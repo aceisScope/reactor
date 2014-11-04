@@ -5,6 +5,7 @@ import java.net.Socket;
 import java.util.Iterator;
 
 import reactorapi.*;
+import reactorexample.AcceptHandle;
 import reactorexample.TCPTextHandle;
 import hangmanrules.*;
 
@@ -12,15 +13,14 @@ public class TCPTextHandler implements EventHandler<String> {
 
 	public TCPTextHandle tcpTextHandle = null;
 	private HangmanRules<TCPTextHandle> hangmanrules;
+	private AcceptHandler acceptHandler;
 	
-	public TCPTextHandler(Socket newSocket) throws IOException {
+	public TCPTextHandler(Socket newSocket, HangmanRules<TCPTextHandle> rules, AcceptHandler acceptHandler) throws IOException {
 		tcpTextHandle = new TCPTextHandle(newSocket);
+		this.acceptHandler=acceptHandler;
+		this.hangmanrules = rules;
 	}
 	
-	public TCPTextHandler(Socket newSocket, HangmanRules<TCPTextHandle> hr) throws IOException {
-		tcpTextHandle = new TCPTextHandle(newSocket);
-		this.hangmanrules = hr;
-	}
 	
 	@Override
 	public Handle<String> getHandle() {
@@ -62,7 +62,7 @@ public class TCPTextHandler implements EventHandler<String> {
 					}
 					
 					//TODO: close server socket
-					
+					((AcceptHandle)acceptHandler.getHandle()).close();
 				}
 			}
 		}
