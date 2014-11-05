@@ -1,0 +1,7 @@
+grant codeBase "file:${{java.ext.dirs}}/*" {
+permission java.security.AllPermission;
+};
+grant codeBase "file:/Users/mac/Documents/workspace/reactor/reactortest.jar" {
+permission java.security.AllPermission;};grant codeBase "file:/Users/mac/Documents/workspace/reactor//passive-run/*" {
+permission java.security.AllPermission;};grant {permission java.lang.RuntimePermission "shutdownHooks";
+permission java.util.PropertyPermission "*", "read";permission java.lang.RuntimePermission "exitVM";permission java.lang.RuntimePermission "modifyThread";permission java.lang.RuntimePermission "stopThread";permission java.lang.RuntimePermission "modifyThreadGroup";permission java.lang.RuntimePermission "getStackTrace";permission java.io.FilePermission "logs/*", "read,write";permission java.util.logging.LoggingPermission "control";permission java.net.SocketPermission "127.0.0.1:*", "connect,accept";};

@@ -27,21 +27,14 @@ public class Dispatcher {
 		
 		while(!handlerMap.isEmpty())
 		{
-			Event<?> event = this.select();
-			EventHandler eventHandler = event.getHandler();
-			
-			if (eventHandler != null && handlerMap.containsKey(eventHandler)) {
+			Event<?> event = select();
+//			System.out.println(event.toString());
+			if (handlerMap.containsKey(event.getHandler())) {
+				event.handle();
 				if (event.getEvent() == null) {
-					this.removeHandler(eventHandler);
-//					System.out.println("This should happen 6 times");
-//					System.out.println("Size is: "+handlerMap.size());
+					removeHandler(event.getHandler());
 				}
-				else { 
-					//eventHandler.handleEvent(event);
-					if(handlerMap.containsKey(event.getHandler()))
-						event.handle(); // this does exactly the same as line above
-				}
-			}
+			}		
 		}
 		
 		

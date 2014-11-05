@@ -1,0 +1,36 @@
++ Basic queue test OK.
++ Basic queue test (yielding) OK.
++ Event queue stress test (without interrupt) OK.
++ Event queue stress test (without interrupt, yielding) OK.
++ Event queue stress test OK.
++ Event queue stress test (yielding) OK.
+- Event queue stress test with getAll did not complete.
+- Failure: Event queue stress test with getAll (yielding)
+  java.lang.UnsupportedOperationException
+  	at java.lang.Thread.stop(Thread.java:869)
+  	at net.sourceforge.groboutils.junit.v1.MultiThreadedTestRunner.killThreads(MultiThreadedTestRunner.java:494)
+  	at net.sourceforge.groboutils.junit.v1.MultiThreadedTestRunner.runTestRunnables(MultiThreadedTestRunner.java:237)
+  	at reactortest.QueueStressTest.testStressTest(QueueStressTest.java:45)
+  	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  	at concassess.testee.ConcTestRunner.start(ConcTestRunner.java:78)
+  	at reactortest.QueueStressTestWithGetAlls.main(QueueStressTestWithGetAlls.java:17)
+  
+- Reactor semantics test did not complete.
++ ReactorExample smoke test OK.
++ ReactorExample smoke test (yielding) OK.
++ ReactorExample smoke test without sleep OK.
++ ReactorExample smoke test without sleep (yielding) OK.
++ Reactor overflow test OK.
++ Reactor stress test OK.
++ Reactor stress test (yielding) OK.
++ Reactor stress test (many dispatchers) OK.
++ Reactor stress test (many dispatchers) (yielding) OK.
++ Hangman win test OK.
++ Hangman win test (yielding+unsync) OK.
++ Hangman lose test OK.
++ Hangman lose test (yielding+unsync) OK.
++ Hangman all guesses wrong test OK.
++ Hangman all guesses wrong test (yielding+unsync) OK.
+21 tests OK
