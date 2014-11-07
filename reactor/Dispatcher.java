@@ -61,10 +61,14 @@ public class Dispatcher {
 		//All events received on the corresponding handle (h.getHandle()) must be (eventually) 
 		//dispatched to h, until removeHandler(h) is called or a null message is received
 		
-		WorkerThread<?> workerThread = new WorkerThread(h, queue);
-		workerThread.start();
-		handlerMap.put(h, workerThread);
-		numberOfActiveWorkerThreads ++;
+		if (!handlerMap.containsKey(h)) 
+		{
+			WorkerThread<?> workerThread = new WorkerThread(h, queue);
+			workerThread.start();
+			handlerMap.put(h, workerThread);
+			numberOfActiveWorkerThreads ++;
+		}
+		
 	}
 
 	public void removeHandler(EventHandler<?> h) {
