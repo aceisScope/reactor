@@ -41,11 +41,19 @@ public class TCPTextHandler implements EventHandler<String> {
 		}
 		
 		else {
-			if(s.length()!=1)
-			{
+//			if(s.length()!=1)
+//			{
+//				hangmanrules.addNewPlayer(tcpTextHandle, s);
+//				tcpTextHandle.write(hangmanrules.getStatus());
+//			}
+			
+			if (findPlayerbyHandle(tcpTextHandle) == null) {
 				hangmanrules.addNewPlayer(tcpTextHandle, s);
 				tcpTextHandle.write(hangmanrules.getStatus());
+				return ;
 			}
+			
+			
 			else
 			{
 			
