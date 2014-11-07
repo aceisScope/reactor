@@ -32,10 +32,11 @@ public class Dispatcher {
 		while(!handlerMap.isEmpty())
 		{
 			Event<?> event = select();
-			if (handlerMap.containsKey(event.getHandler())) {
+			EventHandler<?> handler = event.getHandler();
+			if (handlerMap.containsKey(handler)) {
 				event.handle();
 				if (event.getEvent() == null) {
-					removeHandler(event.getHandler());
+					removeHandler(handler);
 				}
 			}		
 		}
