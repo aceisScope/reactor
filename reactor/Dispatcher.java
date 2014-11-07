@@ -28,7 +28,6 @@ public class Dispatcher {
 		while(!handlerMap.isEmpty())
 		{
 			Event<?> event = select();
-//			System.out.println(event.toString());
 			if (handlerMap.containsKey(event.getHandler())) {
 				event.handle();
 				if (event.getEvent() == null) {

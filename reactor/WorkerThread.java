@@ -53,7 +53,7 @@ public class WorkerThread<T> extends Thread {
 		if (isAlive()) {
 //			System.out.println("cancel worker thread ");
 			stop = true;
-//			this.interrupt();
+			this.interrupt();
 		}
 	}
 }
