@@ -40,8 +40,6 @@ public class WorkerThread<T> extends Thread {
 						System.out.println("something very wrong happens");
 						return;
 					}
-					e.printStackTrace();
-					break;
 				}
 				
 			}	

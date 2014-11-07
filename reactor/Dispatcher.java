@@ -25,6 +25,10 @@ public class Dispatcher {
 		// wait until there is an event. When an event is
 		// received then first event is read and then removed
 		
+		if (handlerMap.isEmpty()) {
+			return;
+		}
+		
 		while(!handlerMap.isEmpty())
 		{
 			Event<?> event = select();

@@ -1,717 +1,88 @@
-SYSTEM/1415357233466: Setting up native launcher.
-SYSTEM/1415357234289: Native launcher OK.
-TASKS/1415357234795: Starting: Basic queue test
-Basic queue test err/1415357234816: POSIX launcher: Spawning process 6720
-Basic queue test err/1415357235043: TESTVM: Running test class: class reactortest.BasicQueueTest
-TASKS/1415357252127: Success: Basic queue test
-Basic queue test err/1415357252127: TESTVM: Completed test class: class reactortest.BasicQueueTest
-Basic queue test err/1415357252131: POSIX launcher: Exited with status 0.
-TASKS/1415357252132: Starting: Basic queue test (yielding)
-Basic queue test (yielding) err/1415357252169: POSIX launcher: Spawning process 6722
-Basic queue test (yielding) err/1415357252530: TESTVM: Running test class: class reactortest.BasicQueueTest
-TASKS/1415357270029: Success: Basic queue test (yielding)
-Basic queue test (yielding) err/1415357270029: TESTVM: Completed test class: class reactortest.BasicQueueTest
-Basic queue test (yielding) err/1415357270052: POSIX launcher: Exited with status 0.
-TASKS/1415357270052: Starting: Event queue stress test (without interrupt)
-Event queue stress test (without interrupt) err/1415357270057: POSIX launcher: Spawning process 6724
-Event queue stress test (without interrupt) err/1415357270249: TESTVM: Running test class: class reactortest.QueueStressTestWithoutInterrupts
-TASKS/1415357272080: Success: Event queue stress test (without interrupt)
-Event queue stress test (without interrupt) err/1415357272080: TESTVM: Completed test class: class reactortest.QueueStressTestWithoutInterrupts
-Event queue stress test (without interrupt) err/1415357272096: POSIX launcher: Exited with status 0.
-TASKS/1415357272097: Starting: Event queue stress test (without interrupt, yielding)
-Event queue stress test (without interrupt, yielding) err/1415357272103: POSIX launcher: Spawning process 6726
-Event queue stress test (without interrupt, yielding) err/1415357272303: TESTVM: Running test class: class reactortest.QueueStressTestWithoutInterrupts
-TASKS/1415357296918: Success: Event queue stress test (without interrupt, yielding)
-Event queue stress test (without interrupt, yielding) err/1415357296920: TESTVM: Completed test class: class reactortest.QueueStressTestWithoutInterrupts
-Event queue stress test (without interrupt, yielding) err/1415357296927: POSIX launcher: Exited with status 0.
-TASKS/1415357296927: Starting: Event queue stress test
-Event queue stress test err/1415357296958: POSIX launcher: Spawning process 6731
-Event queue stress test err/1415357297253: TESTVM: Running test class: class reactortest.QueueStressTest
-TASKS/1415357301681: Success: Event queue stress test
-Event queue stress test err/1415357301681: TESTVM: Completed test class: class reactortest.QueueStressTest
-Event queue stress test err/1415357301685: POSIX launcher: Exited with status 0.
-TASKS/1415357301685: Starting: Event queue stress test (yielding)
-Event queue stress test (yielding) err/1415357301690: POSIX launcher: Spawning process 6733
-Event queue stress test (yielding) err/1415357301877: TESTVM: Running test class: class reactortest.QueueStressTest
-TASKS/1415357327876: Success: Event queue stress test (yielding)
-Event queue stress test (yielding) err/1415357327877: TESTVM: Completed test class: class reactortest.QueueStressTest
-Event queue stress test (yielding) err/1415357327885: POSIX launcher: Exited with status 0.
-TASKS/1415357327885: Starting: Event queue stress test with getAll
-Event queue stress test with getAll err/1415357327967: POSIX launcher: Spawning process 6738
-Event queue stress test with getAll err/1415357328524: TESTVM: Running test class: class reactortest.QueueStressTestWithGetAlls
-Event queue stress test with getAll out/1415357328672:  WARN [Thread-29] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328672: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328672: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328672: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328672: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328672: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328672:  WARN [Thread-39] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328672: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328672: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328672: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328672: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328672: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328673:  WARN [Thread-38] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328673: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328673: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328673: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328673: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328673: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328673:  WARN [Thread-34] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328673: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328673: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328673: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328673: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328673: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328674:  WARN [Thread-35] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328674: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328674: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328674: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328674: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328674: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328674:  WARN [Thread-36] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328674: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328674: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328674: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328674: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328674: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328674:  WARN [Thread-22] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328675: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328675: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328675: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328675: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328675: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328675:  WARN [Thread-37] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328675: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328675: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328675: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328675: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328675: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328675:  WARN [Thread-33] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328675: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328675: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328675: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328675: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328676: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328676:  WARN [Thread-30] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328676: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328676: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328676: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328676: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328676: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328676:  WARN [Thread-20] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328676: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328676: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328676: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328676: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328676: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328677:  WARN [Thread-27] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328677: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328677: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328677: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328677: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328677: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328677:  WARN [Thread-28] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328677: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328677: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328677: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328677: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328677: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328680:  WARN [Thread-26] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328680: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328680: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328680: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328680: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328680: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328680:  WARN [Thread-25] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328680: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328680: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328680: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328680: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328680: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328681:  WARN [Thread-24] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328681: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328681: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328681: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328681: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328681: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328681:  WARN [Thread-31] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328681: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328681: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328681: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328681: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328681: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328682:  WARN [Thread-32] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328682: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328682: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328682: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328682: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328682: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328682:  WARN [Thread-21] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328682: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328682: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328682: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328682: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328682: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357328682:  WARN [Thread-23] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll out/1415357328682: java.lang.UnsupportedOperationException
-Event queue stress test with getAll out/1415357328682: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll out/1415357328682: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll out/1415357328682: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357328682: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348516: 2014-11-07 12:49:08
-Event queue stress test with getAll out/1415357348516: Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.5-b02 mixed mode):
-Event queue stress test with getAll out/1415357348516: 
-Event queue stress test with getAll out/1415357348516: "Thread-19" #28 daemon prio=5 os_prio=31 tid=0x00007f9ebb0d1800 nid=0x7b03 in Object.wait() [0x0000000118b22000]
-Event queue stress test with getAll out/1415357348516:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348516: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348516: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348516: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348516: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348516: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348516: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348516: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348516: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348516: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348516: 
-Event queue stress test with getAll out/1415357348516: "Thread-18" #27 daemon prio=5 os_prio=31 tid=0x00007f9ebb919800 nid=0x7903 in Object.wait() [0x0000000118a1f000]
-Event queue stress test with getAll out/1415357348516:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348516: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348516: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348516: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348516: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348516: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348516: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348516: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348516: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348516: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348516: 
-Event queue stress test with getAll out/1415357348517: "Thread-17" #26 daemon prio=5 os_prio=31 tid=0x00007f9ebb918800 nid=0x7703 in Object.wait() [0x000000011891c000]
-Event queue stress test with getAll out/1415357348517:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348517: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348517: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348517: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348517: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348517: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348517: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348517: 
-Event queue stress test with getAll out/1415357348517: "Thread-16" #25 daemon prio=5 os_prio=31 tid=0x00007f9ebb918000 nid=0x7503 in Object.wait() [0x0000000118819000]
-Event queue stress test with getAll out/1415357348517:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348517: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348517: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348517: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348517: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348517: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348517: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348517: 
-Event queue stress test with getAll out/1415357348517: "Thread-15" #24 daemon prio=5 os_prio=31 tid=0x00007f9eba8b3000 nid=0x7303 in Object.wait() [0x0000000118716000]
-Event queue stress test with getAll out/1415357348517:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348517: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348517: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348517: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348517: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348517: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348517: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348517: 
-Event queue stress test with getAll out/1415357348517: "Thread-14" #23 daemon prio=5 os_prio=31 tid=0x00007f9ebb0cf000 nid=0x7103 in Object.wait() [0x0000000118613000]
-Event queue stress test with getAll out/1415357348517:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348517: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348517: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348517: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348517: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348517: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348517: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348517: 
-Event queue stress test with getAll out/1415357348517: "Thread-13" #22 daemon prio=5 os_prio=31 tid=0x00007f9ebb0ce000 nid=0x6f03 in Object.wait() [0x0000000118510000]
-Event queue stress test with getAll out/1415357348517:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348517: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348517: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348517: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348517: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348517: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348517: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348517: 
-Event queue stress test with getAll out/1415357348517: "Thread-12" #21 daemon prio=5 os_prio=31 tid=0x00007f9eba132800 nid=0x6d03 in Object.wait() [0x000000011840d000]
-Event queue stress test with getAll out/1415357348517:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348517: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348517: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348517: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348517: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348517: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348517: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348517: 
-Event queue stress test with getAll out/1415357348517: "Thread-11" #20 daemon prio=5 os_prio=31 tid=0x00007f9ebb0b3800 nid=0x6b03 in Object.wait() [0x000000011830a000]
-Event queue stress test with getAll out/1415357348517:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348517: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348517: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348518: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348518: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348518: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348518: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348518: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348518: 
-Event queue stress test with getAll out/1415357348518: "Thread-10" #19 daemon prio=5 os_prio=31 tid=0x00007f9eba131000 nid=0x6903 in Object.wait() [0x0000000118207000]
-Event queue stress test with getAll out/1415357348518:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348518: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348518: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348518: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348518: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348518: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348518: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348518: 
-Event queue stress test with getAll out/1415357348518: "Thread-9" #18 daemon prio=5 os_prio=31 tid=0x00007f9eba8aa800 nid=0x6703 in Object.wait() [0x0000000118104000]
-Event queue stress test with getAll out/1415357348518:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348518: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348518: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348518: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348518: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348518: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348518: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348518: 
-Event queue stress test with getAll out/1415357348518: "Thread-8" #17 daemon prio=5 os_prio=31 tid=0x00007f9ebb917000 nid=0x6503 in Object.wait() [0x0000000118001000]
-Event queue stress test with getAll out/1415357348518:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348518: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348518: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348518: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348518: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348518: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348518: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348518: 
-Event queue stress test with getAll out/1415357348518: "Thread-7" #16 daemon prio=5 os_prio=31 tid=0x00007f9ebb0b2800 nid=0x6303 in Object.wait() [0x0000000117efe000]
-Event queue stress test with getAll out/1415357348518:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348518: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348518: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348518: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348518: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348518: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348518: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348518: 
-Event queue stress test with getAll out/1415357348518: "Thread-6" #15 daemon prio=5 os_prio=31 tid=0x00007f9eba130800 nid=0x6103 in Object.wait() [0x0000000117dfb000]
-Event queue stress test with getAll out/1415357348518:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348518: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348518: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348518: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348518: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348518: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348518: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348518: 
-Event queue stress test with getAll out/1415357348518: "Thread-5" #14 daemon prio=5 os_prio=31 tid=0x00007f9eba12f800 nid=0x5f03 in Object.wait() [0x0000000117cf8000]
-Event queue stress test with getAll out/1415357348518:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348518: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348518: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348518: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348518: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348518: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348518: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348518: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348518: 
-Event queue stress test with getAll out/1415357348518: "Thread-4" #13 daemon prio=5 os_prio=31 tid=0x00007f9eba0d6800 nid=0x5d03 in Object.wait() [0x0000000117bf5000]
-Event queue stress test with getAll out/1415357348518:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348519: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348519: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348519: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348519: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348519: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348519: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348519: 
-Event queue stress test with getAll out/1415357348519: "Thread-3" #12 daemon prio=5 os_prio=31 tid=0x00007f9eba0d6000 nid=0x5b03 in Object.wait() [0x0000000117af2000]
-Event queue stress test with getAll out/1415357348519:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348519: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348519: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348519: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348519: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348519: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348519: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348519: 
-Event queue stress test with getAll out/1415357348519: "Thread-2" #11 daemon prio=5 os_prio=31 tid=0x00007f9eba126800 nid=0x5903 in Object.wait() [0x00000001179ef000]
-Event queue stress test with getAll out/1415357348519:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348519: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348519: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348519: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348519: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348519: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348519: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348519: 
-Event queue stress test with getAll out/1415357348519: "Thread-1" #10 daemon prio=5 os_prio=31 tid=0x00007f9ebb0b9000 nid=0x5703 in Object.wait() [0x00000001178ec000]
-Event queue stress test with getAll out/1415357348519:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348519: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348519: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348519: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348519: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348519: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348519: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348519: 
-Event queue stress test with getAll out/1415357348519: "Thread-0" #9 daemon prio=5 os_prio=31 tid=0x00007f9ebb86d800 nid=0x5507 in Object.wait() [0x00000001177e9000]
-Event queue stress test with getAll out/1415357348519:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348519: 	- waiting on <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348519: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Event queue stress test with getAll out/1415357348519: 	- locked <0x00000007b5a8ce60> (a reactor.BlockingEventQueue$Semaphore)
-Event queue stress test with getAll out/1415357348519: 	at reactor.BlockingEventQueue.put(BlockingEventQueue.java:100)
-Event queue stress test with getAll out/1415357348519: 	at reactortest.StressProducer.runTest(StressProducer.java:37)
-Event queue stress test with getAll out/1415357348519: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll out/1415357348519: 
-Event queue stress test with getAll out/1415357348519: "Service Thread" #8 daemon prio=9 os_prio=31 tid=0x00007f9eba062800 nid=0x4d03 runnable [0x0000000000000000]
-Event queue stress test with getAll out/1415357348519:    java.lang.Thread.State: RUNNABLE
-Event queue stress test with getAll out/1415357348519: 
-Event queue stress test with getAll out/1415357348519: "C1 CompilerThread2" #7 daemon prio=9 os_prio=31 tid=0x00007f9ebb003000 nid=0x4b03 waiting on condition [0x0000000000000000]
-Event queue stress test with getAll out/1415357348519:    java.lang.Thread.State: RUNNABLE
-Event queue stress test with getAll out/1415357348519: 
-Event queue stress test with getAll out/1415357348519: "C2 CompilerThread1" #6 daemon prio=9 os_prio=31 tid=0x00007f9eba829000 nid=0x4903 waiting on condition [0x0000000000000000]
-Event queue stress test with getAll out/1415357348519:    java.lang.Thread.State: RUNNABLE
-Event queue stress test with getAll out/1415357348519: 
-Event queue stress test with getAll out/1415357348519: "C2 CompilerThread0" #5 daemon prio=9 os_prio=31 tid=0x00007f9ebb002000 nid=0x4703 waiting on condition [0x0000000000000000]
-Event queue stress test with getAll out/1415357348519:    java.lang.Thread.State: RUNNABLE
-Event queue stress test with getAll out/1415357348519: 
-Event queue stress test with getAll out/1415357348519: "Signal Dispatcher" #4 daemon prio=9 os_prio=31 tid=0x00007f9eba80a000 nid=0x4503 waiting on condition [0x0000000000000000]
-Event queue stress test with getAll out/1415357348519:    java.lang.Thread.State: RUNNABLE
-Event queue stress test with getAll out/1415357348519: 
-Event queue stress test with getAll out/1415357348519: "Finalizer" #3 daemon prio=8 os_prio=31 tid=0x00007f9eba80d000 nid=0x3103 in Object.wait() [0x0000000116ec1000]
-Event queue stress test with getAll out/1415357348519:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348519: 	- waiting on <0x00000007a0060ba8> (a java.lang.ref.ReferenceQueue$Lock)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:142)
-Event queue stress test with getAll out/1415357348519: 	- locked <0x00000007a0060ba8> (a java.lang.ref.ReferenceQueue$Lock)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:158)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
-Event queue stress test with getAll out/1415357348519: 
-Event queue stress test with getAll out/1415357348519: "Reference Handler" #2 daemon prio=10 os_prio=31 tid=0x00007f9ebb809800 nid=0x2f03 in Object.wait() [0x0000000116dbe000]
-Event queue stress test with getAll out/1415357348519:    java.lang.Thread.State: WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348519: 	- waiting on <0x00000007a0060d60> (a java.lang.ref.Reference$Lock)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.Object.wait(Object.java:502)
-Event queue stress test with getAll out/1415357348519: 	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:157)
-Event queue stress test with getAll out/1415357348519: 	- locked <0x00000007a0060d60> (a java.lang.ref.Reference$Lock)
-Event queue stress test with getAll out/1415357348519: 
-Event queue stress test with getAll out/1415357348519: "main" #1 prio=5 os_prio=31 tid=0x00007f9eba800800 nid=0xd07 in Object.wait() [0x0000000102f47000]
-Event queue stress test with getAll out/1415357348520:    java.lang.Thread.State: TIMED_WAITING (on object monitor)
-Event queue stress test with getAll out/1415357348520: 	at java.lang.Object.wait(Native Method)
-Event queue stress test with getAll out/1415357348520: 	at java.lang.Thread.join(Thread.java:1253)
-Event queue stress test with getAll out/1415357348520: 	- locked <0x00000007b5aa1d20> (a java.lang.Thread)
-Event queue stress test with getAll out/1415357348520: 	at net.sourceforge.groboutils.junit.v1.MultiThreadedTestRunner.joinThreads(MultiThreadedTestRunner.java:437)
-Event queue stress test with getAll out/1415357348520: 	at net.sourceforge.groboutils.junit.v1.MultiThreadedTestRunner.runTestRunnables(MultiThreadedTestRunner.java:230)
-Event queue stress test with getAll out/1415357348520: 	at reactortest.QueueStressTest.testStressTest(QueueStressTest.java:45)
-Event queue stress test with getAll out/1415357348520: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-Event queue stress test with getAll out/1415357348520: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-Event queue stress test with getAll out/1415357348520: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-Event queue stress test with getAll out/1415357348520: 	at java.lang.reflect.Method.invoke(Method.java:483)
-Event queue stress test with getAll out/1415357348520: 	at junit.framework.TestCase.runTest(TestCase.java:164)
-Event queue stress test with getAll out/1415357348520: 	at junit.framework.TestCase.runBare(TestCase.java:130)
-Event queue stress test with getAll out/1415357348520: 	at junit.framework.TestResult$1.protect(TestResult.java:106)
-Event queue stress test with getAll out/1415357348520: 	at junit.framework.TestResult.runProtected(TestResult.java:124)
-Event queue stress test with getAll out/1415357348520: 	at junit.framework.TestResult.run(TestResult.java:109)
-Event queue stress test with getAll out/1415357348520: 	at junit.framework.TestCase.run(TestCase.java:120)
-Event queue stress test with getAll out/1415357348520: 	at junit.framework.TestSuite.runTest(TestSuite.java:230)
-Event queue stress test with getAll out/1415357348520: 	at junit.framework.TestSuite.run(TestSuite.java:225)
-Event queue stress test with getAll out/1415357348520: 	at concassess.testee.ConcTestRunner.start(ConcTestRunner.java:78)
-Event queue stress test with getAll out/1415357348520: 	at reactortest.QueueStressTestWithGetAlls.main(QueueStressTestWithGetAlls.java:17)
-Event queue stress test with getAll out/1415357348520: 
-Event queue stress test with getAll out/1415357348520: "VM Thread" os_prio=31 tid=0x00007f9eba05c000 nid=0x2d03 runnable 
-Event queue stress test with getAll out/1415357348520: 
-Event queue stress test with getAll out/1415357348520: "GC task thread#0 (ParallelGC)" os_prio=31 tid=0x00007f9eba00f800 nid=0x10f runnable 
-Event queue stress test with getAll out/1415357348520: 
-Event queue stress test with getAll out/1415357348520: "GC task thread#1 (ParallelGC)" os_prio=31 tid=0x00007f9eba010000 nid=0x252b runnable 
-Event queue stress test with getAll out/1415357348520: 
-Event queue stress test with getAll out/1415357348520: "GC task thread#2 (ParallelGC)" os_prio=31 tid=0x00007f9eba010800 nid=0x2903 runnable 
-Event queue stress test with getAll out/1415357348520: 
-Event queue stress test with getAll out/1415357348520: "GC task thread#3 (ParallelGC)" os_prio=31 tid=0x00007f9eba801800 nid=0x2b03 runnable 
-Event queue stress test with getAll out/1415357348520: 
-Event queue stress test with getAll out/1415357348520: "VM Periodic Task Thread" os_prio=31 tid=0x00007f9ebb033800 nid=0x4f03 waiting on condition 
-Event queue stress test with getAll out/1415357348520: 
-Event queue stress test with getAll out/1415357348520: JNI global references: 87
-Event queue stress test with getAll out/1415357348520: 
-Event queue stress test with getAll out/1415357348520: Heap
-Event queue stress test with getAll out/1415357348520:  PSYoungGen      total 5120K, used 1736K [0x00000007b5580000, 0x00000007b5b80000, 0x00000007c0000000)
-Event queue stress test with getAll out/1415357348520:   eden space 4096K, 33% used [0x00000007b5580000,0x00000007b56d2210,0x00000007b5980000)
-Event queue stress test with getAll out/1415357348520:   from space 1024K, 37% used [0x00000007b5a80000,0x00000007b5ae0000,0x00000007b5b80000)
-Event queue stress test with getAll out/1415357348520:   to   space 1024K, 0% used [0x00000007b5980000,0x00000007b5980000,0x00000007b5a80000)
-Event queue stress test with getAll out/1415357348520:  ParOldGen       total 64000K, used 812K [0x00000007a0000000, 0x00000007a3e80000, 0x00000007b5580000)
-Event queue stress test with getAll out/1415357348520:   object space 64000K, 1% used [0x00000007a0000000,0x00000007a00cb2d0,0x00000007a3e80000)
-Event queue stress test with getAll out/1415357348520:  Metaspace       used 4431K, capacity 4992K, committed 5248K, reserved 1056768K
-Event queue stress test with getAll out/1415357348520:   class space    used 512K, capacity 560K, committed 640K, reserved 1048576K
-Event queue stress test with getAll out/1415357348520: 
-TASKS/1415357358522: Did not complete: Event queue stress test with getAll
-Event queue stress test with getAll err/1415357358522: POSIX launcher: Exited with status 143.
-Event queue stress test with getAll err/1415357358522: POSIX launcher: Program aborted.
-TASKS/1415357358523: Starting: Event queue stress test with getAll (yielding)
-Event queue stress test with getAll (yielding) err/1415357358528: POSIX launcher: Spawning process 6743
-Event queue stress test with getAll (yielding) err/1415357358753: TESTVM: Running test class: class reactortest.QueueStressTestWithGetAlls
-Event queue stress test with getAll (yielding) out/1415357358923:  WARN [Thread-29] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358923: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358923: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358923: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358923: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358923: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358923:  WARN [Thread-37] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358923: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358923: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358923: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358923: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358923: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358924:  WARN [Thread-36] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358924: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358924: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358924: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358924: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358924: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358924:  WARN [Thread-35] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358924: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358924: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358924: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358924: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358924: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358925:  WARN [Thread-34] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358925: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358925: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358925: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358925: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358925: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358925:  WARN [Thread-33] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358925: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358925: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358925: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358925: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358925: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358925:  WARN [Thread-32] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358925: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358925: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358925: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358925: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358925: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358926:  WARN [Thread-31] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358926: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358926: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358926: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358926: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358926: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358926:  WARN [Thread-38] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358926: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358926: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358926: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358926: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358926: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358927:  WARN [Thread-21] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358927: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358927: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358927: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358927: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358927: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358927:  WARN [Thread-24] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358927: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358927: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358927: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358927: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358927: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358928:  WARN [Thread-40] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358928: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358928: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358928: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358928: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358928: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358928:  WARN [Thread-28] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358928: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358928: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358928: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358928: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358928: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358929:  WARN [Thread-23] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358929: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358929: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358929: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358929: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358929: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358929:  WARN [Thread-27] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358929: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358929: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358929: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358929: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358929: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358930:  WARN [Thread-26] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358930: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358930: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358930: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358930: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358930: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358930:  WARN [Thread-25] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358930: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358930: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358930: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358930: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358930: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358930:  WARN [Thread-22] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358930: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358930: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358930: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358930: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358931: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358931:  WARN [Thread-39] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358931: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358931: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358931: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358931: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358931: 	at java.lang.Thread.run(Thread.java:745)
-Event queue stress test with getAll (yielding) out/1415357358932:  WARN [Thread-30] (MultiThreadedTestRunner.java:276) - A test thread caused an exception.
-Event queue stress test with getAll (yielding) out/1415357358932: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) out/1415357358932: 	at reactor.BlockingEventQueue.getAll(BlockingEventQueue.java:84)
-Event queue stress test with getAll (yielding) out/1415357358932: 	at reactortest.StressConsumer.runTest(StressConsumer.java:33)
-Event queue stress test with getAll (yielding) out/1415357358932: 	at net.sourceforge.groboutils.junit.v1.TestRunnable.run(TestRunnable.java:154)
-Event queue stress test with getAll (yielding) out/1415357358932: 	at java.lang.Thread.run(Thread.java:745)
-TASKS/1415357389140: Failure: Event queue stress test with getAll (yielding)
-Event queue stress test with getAll (yielding) err/1415357389140: testStressTest(reactortest.QueueStressTestWithGetAlls)
-Event queue stress test with getAll (yielding) err/1415357389142: java.lang.UnsupportedOperationException
-Event queue stress test with getAll (yielding) err/1415357389142: 	at java.lang.Thread.stop(Thread.java:869)
-Event queue stress test with getAll (yielding) err/1415357389142: 	at net.sourceforge.groboutils.junit.v1.MultiThreadedTestRunner.killThreads(MultiThreadedTestRunner.java:494)
-Event queue stress test with getAll (yielding) err/1415357389142: 	at net.sourceforge.groboutils.junit.v1.MultiThreadedTestRunner.runTestRunnables(MultiThreadedTestRunner.java:237)
-Event queue stress test with getAll (yielding) err/1415357389142: 	at reactortest.QueueStressTest.testStressTest(QueueStressTest.java:45)
-Event queue stress test with getAll (yielding) err/1415357389142: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-Event queue stress test with getAll (yielding) err/1415357389142: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-Event queue stress test with getAll (yielding) err/1415357389142: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-Event queue stress test with getAll (yielding) err/1415357389142: 	at concassess.testee.ConcTestRunner.start(ConcTestRunner.java:78)
-Event queue stress test with getAll (yielding) err/1415357389142: 	at reactortest.QueueStressTestWithGetAlls.main(QueueStressTestWithGetAlls.java:17)
-Event queue stress test with getAll (yielding) err/1415357389142: TESTVM: Completed test class: class reactortest.QueueStressTestWithGetAlls
-Event queue stress test with getAll (yielding) err/1415357389152: POSIX launcher: Exited with status 0.
-TASKS/1415357389153: Starting: Reactor semantics test
-Reactor semantics test err/1415357389158: POSIX launcher: Spawning process 6749
-Reactor semantics test err/1415357389403: TESTVM: Running test class: class reactortest.ReactorSemanticsTest
-Reactor semantics test out/1415357409398: 2014-11-07 12:50:09
-Reactor semantics test out/1415357409398: Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.5-b02 mixed mode):
-Reactor semantics test out/1415357409398: 
-Reactor semantics test out/1415357409398: "Thread-1" #10 prio=5 os_prio=31 tid=0x00007ff55b086800 nid=0x5703 in Object.wait() [0x000000011a247000]
-Reactor semantics test out/1415357409398:    java.lang.Thread.State: WAITING (on object monitor)
-Reactor semantics test out/1415357409398: 	at java.lang.Object.wait(Native Method)
-Reactor semantics test out/1415357409398: 	- waiting on <0x00000007b5627d80> (a reactortest.ReactorSemanticsTest$TestHandle)
-Reactor semantics test out/1415357409398: 	at java.lang.Object.wait(Object.java:502)
-Reactor semantics test out/1415357409398: 	at reactortest.ReactorSemanticsTest$TestHandle.read(ReactorSemanticsTest.java:119)
-Reactor semantics test out/1415357409398: 	- locked <0x00000007b5627d80> (a reactortest.ReactorSemanticsTest$TestHandle)
-Reactor semantics test out/1415357409398: 	at reactor.WorkerThread.run(WorkerThread.java:33)
-Reactor semantics test out/1415357409398: 
-Reactor semantics test out/1415357409398: "Service Thread" #8 daemon prio=9 os_prio=31 tid=0x00007ff55c037000 nid=0x4d03 runnable [0x0000000000000000]
-Reactor semantics test out/1415357409398:    java.lang.Thread.State: RUNNABLE
-Reactor semantics test out/1415357409398: 
-Reactor semantics test out/1415357409398: "C1 CompilerThread2" #7 daemon prio=9 os_prio=31 tid=0x00007ff55b814800 nid=0x4b03 waiting on condition [0x0000000000000000]
-Reactor semantics test out/1415357409398:    java.lang.Thread.State: RUNNABLE
-Reactor semantics test out/1415357409398: 
-Reactor semantics test out/1415357409398: "C2 CompilerThread1" #6 daemon prio=9 os_prio=31 tid=0x00007ff55b813800 nid=0x4903 waiting on condition [0x0000000000000000]
-Reactor semantics test out/1415357409398:    java.lang.Thread.State: RUNNABLE
-Reactor semantics test out/1415357409398: 
-Reactor semantics test out/1415357409398: "C2 CompilerThread0" #5 daemon prio=9 os_prio=31 tid=0x00007ff55b812000 nid=0x4703 waiting on condition [0x0000000000000000]
-Reactor semantics test out/1415357409398:    java.lang.Thread.State: RUNNABLE
-Reactor semantics test out/1415357409398: 
-Reactor semantics test out/1415357409398: "Signal Dispatcher" #4 daemon prio=9 os_prio=31 tid=0x00007ff55b811800 nid=0x4503 waiting on condition [0x0000000000000000]
-Reactor semantics test out/1415357409398:    java.lang.Thread.State: RUNNABLE
-Reactor semantics test out/1415357409398: 
-Reactor semantics test out/1415357409398: "Finalizer" #3 daemon prio=8 os_prio=31 tid=0x00007ff55c014000 nid=0x3103 in Object.wait() [0x0000000119816000]
-Reactor semantics test out/1415357409398:    java.lang.Thread.State: WAITING (on object monitor)
-Reactor semantics test out/1415357409398: 	at java.lang.Object.wait(Native Method)
-Reactor semantics test out/1415357409398: 	- waiting on <0x00000007b5680e18> (a java.lang.ref.ReferenceQueue$Lock)
-Reactor semantics test out/1415357409398: 	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:142)
-Reactor semantics test out/1415357409398: 	- locked <0x00000007b5680e18> (a java.lang.ref.ReferenceQueue$Lock)
-Reactor semantics test out/1415357409398: 	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:158)
-Reactor semantics test out/1415357409398: 	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
-Reactor semantics test out/1415357409398: 
-Reactor semantics test out/1415357409398: "Reference Handler" #2 daemon prio=10 os_prio=31 tid=0x00007ff55a857000 nid=0x2f03 in Object.wait() [0x0000000119713000]
-Reactor semantics test out/1415357409398:    java.lang.Thread.State: WAITING (on object monitor)
-Reactor semantics test out/1415357409398: 	at java.lang.Object.wait(Native Method)
-Reactor semantics test out/1415357409398: 	- waiting on <0x00000007b5680e58> (a java.lang.ref.Reference$Lock)
-Reactor semantics test out/1415357409399: 	at java.lang.Object.wait(Object.java:502)
-Reactor semantics test out/1415357409399: 	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:157)
-Reactor semantics test out/1415357409399: 	- locked <0x00000007b5680e58> (a java.lang.ref.Reference$Lock)
-Reactor semantics test out/1415357409399: 
-Reactor semantics test out/1415357409399: "main" #1 prio=5 os_prio=31 tid=0x00007ff55a805000 nid=0xd07 in Object.wait() [0x0000000106fbf000]
-Reactor semantics test out/1415357409399:    java.lang.Thread.State: WAITING (on object monitor)
-Reactor semantics test out/1415357409399: 	at java.lang.Object.wait(Native Method)
-Reactor semantics test out/1415357409399: 	- waiting on <0x00000007b5608410> (a reactor.BlockingEventQueue$Semaphore)
-Reactor semantics test out/1415357409399: 	at java.lang.Object.wait(Object.java:502)
-Reactor semantics test out/1415357409399: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
-Reactor semantics test out/1415357409399: 	- locked <0x00000007b5608410> (a reactor.BlockingEventQueue$Semaphore)
-Reactor semantics test out/1415357409399: 	at reactor.BlockingEventQueue.get(BlockingEventQueue.java:73)
-Reactor semantics test out/1415357409399: 	at reactor.Dispatcher.select(Dispatcher.java:56)
-Reactor semantics test out/1415357409399: 	at reactor.Dispatcher.handleEvents(Dispatcher.java:30)
-Reactor semantics test out/1415357409399: 	at reactortest.ReactorSemanticsTest.testSemantics(ReactorSemanticsTest.java:31)
-Reactor semantics test out/1415357409399: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-Reactor semantics test out/1415357409399: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-Reactor semantics test out/1415357409399: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-Reactor semantics test out/1415357409399: 	at java.lang.reflect.Method.invoke(Method.java:483)
-Reactor semantics test out/1415357409399: 	at junit.framework.TestCase.runTest(TestCase.java:164)
-Reactor semantics test out/1415357409399: 	at junit.framework.TestCase.runBare(TestCase.java:130)
-Reactor semantics test out/1415357409399: 	at junit.framework.TestResult$1.protect(TestResult.java:106)
-Reactor semantics test out/1415357409399: 	at junit.framework.TestResult.runProtected(TestResult.java:124)
-Reactor semantics test out/1415357409399: 	at junit.framework.TestResult.run(TestResult.java:109)
-Reactor semantics test out/1415357409399: 	at junit.framework.TestCase.run(TestCase.java:120)
-Reactor semantics test out/1415357409399: 	at junit.framework.TestSuite.runTest(TestSuite.java:230)
-Reactor semantics test out/1415357409399: 	at junit.framework.TestSuite.run(TestSuite.java:225)
-Reactor semantics test out/1415357409399: 	at concassess.testee.ConcTestRunner.start(ConcTestRunner.java:78)
-Reactor semantics test out/1415357409399: 	at reactortest.ReactorSemanticsTest.main(ReactorSemanticsTest.java:129)
-Reactor semantics test out/1415357409399: 
-Reactor semantics test out/1415357409399: "VM Thread" os_prio=31 tid=0x00007ff55c00e000 nid=0x2d03 runnable 
-Reactor semantics test out/1415357409399: 
-Reactor semantics test out/1415357409399: "GC task thread#0 (ParallelGC)" os_prio=31 tid=0x00007ff55c00c800 nid=0x10f runnable 
-Reactor semantics test out/1415357409399: 
-Reactor semantics test out/1415357409399: "GC task thread#1 (ParallelGC)" os_prio=31 tid=0x00007ff55b808800 nid=0x252b runnable 
-Reactor semantics test out/1415357409399: 
-Reactor semantics test out/1415357409399: "GC task thread#2 (ParallelGC)" os_prio=31 tid=0x00007ff55b809800 nid=0x2903 runnable 
-Reactor semantics test out/1415357409399: 
-Reactor semantics test out/1415357409399: "GC task thread#3 (ParallelGC)" os_prio=31 tid=0x00007ff55b80a000 nid=0x2b03 runnable 
-Reactor semantics test out/1415357409399: 
-Reactor semantics test out/1415357409399: "VM Periodic Task Thread" os_prio=31 tid=0x00007ff55c057800 nid=0x4f03 waiting on condition 
-Reactor semantics test out/1415357409399: 
-Reactor semantics test out/1415357409399: JNI global references: 36
-Reactor semantics test out/1415357409399: 
-Reactor semantics test out/1415357409399: Heap
-Reactor semantics test out/1415357409399:  PSYoungGen      total 1536K, used 1264K [0x00000007b5580000, 0x00000007b5880000, 0x00000007c0000000)
-Reactor semantics test out/1415357409399:   eden space 1024K, 73% used [0x00000007b5580000,0x00000007b563c350,0x00000007b5680000)
-Reactor semantics test out/1415357409399:   from space 512K, 100% used [0x00000007b5680000,0x00000007b5700000,0x00000007b5700000)
-Reactor semantics test out/1415357409399:   to   space 512K, 0% used [0x00000007b5800000,0x00000007b5800000,0x00000007b5880000)
-Reactor semantics test out/1415357409399:  ParOldGen       total 64000K, used 199K [0x00000007a0000000, 0x00000007a3e80000, 0x00000007b5580000)
-Reactor semantics test out/1415357409399:   object s
+SYSTEM/1415357948363: Setting up native launcher.
+SYSTEM/1415357948607: Native launcher OK.
+TASKS/1415357949129: Starting: Basic queue test
+TASKS/1415357950349: Starting: Basic queue test (yielding)
+TASKS/1415357950884: Starting: Event queue stress test (without interrupt)
+TASKS/1415357951309: Starting: Event queue stress test (without interrupt, yielding)
+TASKS/1415357951780: Starting: Event queue stress test
+TASKS/1415357952221: Starting: Event queue stress test (yielding)
+TASKS/1415357952740: Starting: Event queue stress test with getAll
+TASKS/1415357953269: Starting: Event queue stress test with getAll (yielding)
+TASKS/1415357953668: Starting: Reactor semantics test
+Reactor semantics test err/1415357954744: POSIX launcher: Spawning process 6924
+Reactor semantics test err/1415357954940: TESTVM: Running test class: class reactortest.ReactorSemanticsTest
+Reactor semantics test out/1415357974936: 2014-11-07 12:59:34
+Reactor semantics test out/1415357974936: Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.5-b02 mixed mode):
+Reactor semantics test out/1415357974936: 
+Reactor semantics test out/1415357974936: "Thread-1" #10 prio=5 os_prio=31 tid=0x00007f99f38b5000 nid=0x5803 in Object.wait() [0x000000011fca0000]
+Reactor semantics test out/1415357974936:    java.lang.Thread.State: WAITING (on object monitor)
+Reactor semantics test out/1415357974936: 	at java.lang.Object.wait(Native Method)
+Reactor semantics test out/1415357974936: 	- waiting on <0x00000007b56261d8> (a reactortest.ReactorSemanticsTest$TestHandle)
+Reactor semantics test out/1415357974936: 	at java.lang.Object.wait(Object.java:502)
+Reactor semantics test out/1415357974936: 	at reactortest.ReactorSemanticsTest$TestHandle.read(ReactorSemanticsTest.java:119)
+Reactor semantics test out/1415357974936: 	- locked <0x00000007b56261d8> (a reactortest.ReactorSemanticsTest$TestHandle)
+Reactor semantics test out/1415357974936: 	at reactor.WorkerThread.run(WorkerThread.java:33)
+Reactor semantics test out/1415357974936: 
+Reactor semantics test out/1415357974936: "Service Thread" #8 daemon prio=9 os_prio=31 tid=0x00007f99f286d000 nid=0x4d03 runnable [0x0000000000000000]
+Reactor semantics test out/1415357974936:    java.lang.Thread.State: RUNNABLE
+Reactor semantics test out/1415357974936: 
+Reactor semantics test out/1415357974936: "C1 CompilerThread2" #7 daemon prio=9 os_prio=31 tid=0x00007f99f3009800 nid=0x4b03 waiting on condition [0x0000000000000000]
+Reactor semantics test out/1415357974936:    java.lang.Thread.State: RUNNABLE
+Reactor semantics test out/1415357974936: 
+Reactor semantics test out/1415357974936: "C2 CompilerThread1" #6 daemon prio=9 os_prio=31 tid=0x00007f99f2019800 nid=0x4903 waiting on condition [0x0000000000000000]
+Reactor semantics test out/1415357974936:    java.lang.Thread.State: RUNNABLE
+Reactor semantics test out/1415357974936: 
+Reactor semantics test out/1415357974936: "C2 CompilerThread0" #5 daemon prio=9 os_prio=31 tid=0x00007f99f2839800 nid=0x4703 waiting on condition [0x0000000000000000]
+Reactor semantics test out/1415357974936:    java.lang.Thread.State: RUNNABLE
+Reactor semantics test out/1415357974936: 
+Reactor semantics test out/1415357974936: "Signal Dispatcher" #4 daemon prio=9 os_prio=31 tid=0x00007f99f3008800 nid=0x4503 waiting on condition [0x0000000000000000]
+Reactor semantics test out/1415357974936:    java.lang.Thread.State: RUNNABLE
+Reactor semantics test out/1415357974936: 
+Reactor semantics test out/1415357974936: "Finalizer" #3 daemon prio=8 os_prio=31 tid=0x00007f99f3007000 nid=0x3103 in Object.wait() [0x000000011f269000]
+Reactor semantics test out/1415357974936:    java.lang.Thread.State: WAITING (on object monitor)
+Reactor semantics test out/1415357974936: 	at java.lang.Object.wait(Native Method)
+Reactor semantics test out/1415357974936: 	- waiting on <0x00000007b5688970> (a java.lang.ref.ReferenceQueue$Lock)
+Reactor semantics test out/1415357974936: 	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:142)
+Reactor semantics test out/1415357974937: 	- locked <0x00000007b5688970> (a java.lang.ref.ReferenceQueue$Lock)
+Reactor semantics test out/1415357974937: 	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:158)
+Reactor semantics test out/1415357974937: 	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+Reactor semantics test out/1415357974937: 
+Reactor semantics test out/1415357974937: "Reference Handler" #2 daemon prio=10 os_prio=31 tid=0x00007f99f3805800 nid=0x2f03 in Object.wait() [0x000000011f166000]
+Reactor semantics test out/1415357974937:    java.lang.Thread.State: WAITING (on object monitor)
+Reactor semantics test out/1415357974937: 	at java.lang.Object.wait(Native Method)
+Reactor semantics test out/1415357974937: 	- waiting on <0x00000007b56982f0> (a java.lang.ref.Reference$Lock)
+Reactor semantics test out/1415357974937: 	at java.lang.Object.wait(Object.java:502)
+Reactor semantics test out/1415357974937: 	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:157)
+Reactor semantics test out/1415357974937: 	- locked <0x00000007b56982f0> (a java.lang.ref.Reference$Lock)
+Reactor semantics test out/1415357974937: 
+Reactor semantics test out/1415357974937: "main" #1 prio=5 os_prio=31 tid=0x00007f99f2804800 nid=0xd07 in Object.wait() [0x000000010c9bf000]
+Reactor semantics test out/1415357974937:    java.lang.Thread.State: WAITING (on object monitor)
+Reactor semantics test out/1415357974937: 	at java.lang.Object.wait(Native Method)
+Reactor semantics test out/1415357974937: 	- waiting on <0x00000007b56068f8> (a reactor.BlockingEventQueue$Semaphore)
+Reactor semantics test out/1415357974937: 	at java.lang.Object.wait(Object.java:502)
+Reactor semantics test out/1415357974937: 	at reactor.BlockingEventQueue$Semaphore.acquire(BlockingEventQueue.java:36)
+Reactor semantics test out/1415357974937: 	- locked <0x00000007b56068f8> (a reactor.BlockingEventQueue$Semaphore)
+Reactor semantics test out/1415357974937: 	at reactor.BlockingEventQueue.get(BlockingEventQueue.java:73)
+Reactor semantics test out/1415357974937: 	at reactor.Dispatcher.select(Dispatcher.java:56)
+Reactor semantics test out/1415357974937: 	at reactor.Dispatcher.handleEvents(Dispatcher.java:30)
+Reactor semantics test out/1415357974937: 	at reactortest.ReactorSemanticsTest.testSemantics(ReactorSemanticsTest.java:31)
+Reactor semantics test out/1415357974937: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+Reactor semantics test out/1415357974937: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+Reactor semantics test out/1415357974937: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Reactor semantics test out/1415357974937: 	at java.lang.reflect.Method.invoke(Method.java:483)
+Reactor semantics test out/1415357974937: 	at junit.framework.TestCase.runTest(TestCase.java:164)
+Reactor semantics test out/1415357974937: 	at junit.framework.TestCase.runBare(TestCase.java:130)
+Reactor semantics test out/1415357974937: 	at junit.framework.TestResult$1.protect(TestResult.java:106)
+Reactor semantics test out/1415357974937: 	at junit.framework.TestResult.runProtected(TestResult.java:124)
+Reactor semantics test out/1415357974937: 	at junit.framework.TestResult.run(TestResult.java:109)
+Reactor semantics test out/1415357974937: 	at junit.framework.TestCase.run(TestCase.java:120)
+Reactor semantics test out/1415357974937: 	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+Reactor semantics test out/1415357974937: 	at junit.framework.TestSuite.run(TestSuite.java:225)
+Reactor semantics test out/1415357974937: 	at concassess.testee.ConcTestRunner.start(ConcTestRunner.java:78)
+Reactor semantics test out/1415357974937: 	at reactortest.ReactorSemanticsTest.main(ReactorSemanticsTest.java:129)
+Reactor semantics test out/1415357974937: 
+Reactor semantics test out/1415357974937: "VM Thread" os_prio=31 tid=0x00007f99f2016000 nid=0x2d03 runnable 
+Reactor semantics test out/1415357974937: 
+Reactor semantics test out/1415357974937: "GC task thread#0 (ParallelGC)" os_prio=31 tid=0x00007f99f2813800 nid=0x10f runnable 
+Reactor semantics test out/1415357974937: 
+Reactor semantics 

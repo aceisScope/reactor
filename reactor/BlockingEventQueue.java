@@ -17,20 +17,12 @@ public class BlockingEventQueue<T> implements BlockingQueue<Event<? extends T>> 
 	        if (i < 0) throw new IllegalArgumentException(i + " < 0");
 	        counter = i;
 	    }
-	    /**
-	     * Increments internal counter, possibly awakening a thread
-	     * wait()ing in acquire().
-	     */
+
 	    public synchronized void release() {
 	        counter++;
 	        this.notify();
 	    }
-	    /**
-	     * Decrements internal counter, blocking if the counter is already
-	     * zero.
-	     *
-	     * @exception InterruptedException passed from this.wait().
-	     */
+
 	    public synchronized void acquire() throws InterruptedException {
 	        while (counter == 0) {
 	            this.wait();
@@ -42,14 +34,16 @@ public class BlockingEventQueue<T> implements BlockingQueue<Event<? extends T>> 
 	public BlockingEventQueue(int capacity) {
 		this.capacity = capacity;
 		
-		this.emptySemaphore = new Semaphore(0);
-		this.fullSemaphore = new Semaphore(capacity);
+		this.notEmpty = new Semaphore(0);
+		this.notFull = new Semaphore(capacity);
 	}
 
 	public int getSize() {
+		int size = 0;
 		synchronized (this.queue) {
-			return this.queue.size();
+			size = queue.size();
 		}
+		return size;
 	}
 
 	public int getCapacity() {		
@@ -70,13 +64,13 @@ public class BlockingEventQueue<T> implements BlockingQueue<Event<? extends T>> 
 //			return queue.remove(0);
 //		}
 		
-		emptySemaphore.acquire();
+		notEmpty.acquire();
 		
 		Event<? extends T> tmp;
 		synchronized (queue) {
 			tmp = queue.remove(0);
 		}
-		fullSemaphore.release();
+		notFull.release();
 		return tmp;
 	}
 
@@ -97,19 +91,19 @@ public class BlockingEventQueue<T> implements BlockingQueue<Event<? extends T>> 
 //			queue.add(event);
 //		}
 		
-		fullSemaphore.acquire();
+		notFull.acquire();
 		
 		synchronized (queue) {
 			queue.add(event);
 		}
-		emptySemaphore.release();
+		notEmpty.release();
 	}
 
 	// Add other methods and variables here as needed.
 	private LinkedList<Event<? extends T>> queue = new LinkedList<Event<? extends T>>();
 	final private int capacity;
 	
-	private Semaphore fullSemaphore;
-	private Semaphore emptySemaphore;
+	private Semaphore notFull;
+	private Semaphore notEmpty;
 	
 }
