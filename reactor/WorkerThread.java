@@ -20,6 +20,18 @@ public class WorkerThread<T> extends Thread {
 			while(!stop)
 			{
 				
+				if (Thread.currentThread().isInterrupted())
+			      {
+				        try
+				        {
+				          throw (new InterruptedException ());
+				        } catch (InterruptedException e)
+				        {
+				          break;
+				        }
+			      }
+
+				
 				try {
 					T something = handler.getHandle().read();
 //					System.out.println("I will try to put "+something);
