@@ -34,3 +34,6 @@ passive/*
 passive-run/*
 yielding/*
 output.txt
+/bin/
+logs/*
+logReactor semantics test.dmp
