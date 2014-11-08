@@ -72,11 +72,9 @@ public class Dispatcher {
 	}
 
 	public void removeHandler(EventHandler<?> h) {
-		//eventHandlers.remove(h);
-		
 		if (handlerMap.containsKey(h)) {
-//			System.out.print("remove handler ");
-			handlerMap.get(h).cancelThread();
+			WorkerThread <?> thread = handlerMap.get(h);
+			thread.cancelThread();
 			handlerMap.remove(h);
 		}
 	}
