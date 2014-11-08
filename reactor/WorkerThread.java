@@ -22,13 +22,7 @@ public class WorkerThread<T> extends Thread {
 				
 				if (Thread.currentThread().isInterrupted())
 			      {
-				        try
-				        {
-				          throw (new InterruptedException ());
-				        } catch (InterruptedException e)
-				        {
-				          break;
-				        }
+				      break;
 			      }
 
 				
