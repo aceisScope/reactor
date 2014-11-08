@@ -25,3 +25,12 @@ local.properties
 
 # Locally stored "Eclipse launch configurations"
 *.launch
+
+studentpolicy
+summary.txt
+timeout.c
+timeout2
+passive/*
+passive-run/*
+yielding/*
+output.txt
